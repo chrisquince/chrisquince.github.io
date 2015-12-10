@@ -1,0 +1,39 @@
+---
+layout: default
+title: Chris Quince, Metagenomics bioinformatician
+---
+<div class="blurb">
+	<h1>Research achievements</h1>
+	<p>The development of 16S rRNA gene sequencing, coupled to high-throughput next generation sequencers such as 454 
+	pyrosequencing, transformed our ability to analyse microbial communities. Amplifying a portion of this 
+	gene with PCR prior to sequencing provides an in depth survey of the taxa present and their abundances. 
+	Early studies revealed a vast diversity of novel organisms. I was amongst the first people to realise that 
+	these studies were inflating diversity estimates by failing to account for the impact of sequencing errors. 
+	In a series of highly cited seminal papers, I both outlined the problem and devised algorithms capable of 
+	providing accurate diversity estimates from 454 data (Quince et al. 2009 - 655 citations, Quince et al. 2011 - 704 citations). 
+	In effect, I invented a whole new class of algorithms, sequence denoisers for amplicons. 
+	I also realised that PCR chimera identification could be improved by testing rare sequences against more 
+	abundant potential parents, an idea incorporated into the Uchime application, described in a paper that I co-authored 
+	(Edgar et al. 2011: 1579 citations 3/12/2015).</p> 
+
+  <p> Having addressed the question of errors in sequence data from microbial communities, I turned to the development of 
+  probabilistic models for the interpretation of the resulting community structures. Initially, I addressed the 
+  question of how many species would be observed if we could sample a community exhaustively (Quince et al. 2008 – cited 137 times). 
+  I then went on to consider models that look not simply at how many organisms are present but how their relative abundances 
+  differ between samples. Inspired by the idea that human gut communities derive from a number of discrete types or enterotypes, 
+  I developed Bayesian models capable of a diffuse clustering of community structures (Holmes et al. 2012 – 53 citations). 
+  Describing enterotypes as peaks in the probability distribution over the space of community configurations. 
+  It is now commonly accepted that this view of enterotypes is more realistic than the original proposal of discrete types. 
+  I have continued this strand of research extending the models to the case when not all species have been observed using 
+  Bayesian non-parametric priors. We have shown that models in ecology for community assembly 
+  (Hubbell’s Unified Neutral Theory of Biodiversity) are in fact an example of one of these models, 
+  the hierarchical Dirichlet process (Harris et al. 2015).</p> 
+
+  <p>Recently, the focus of my bioinformatics work has shifted away from 16S rRNA gene amplicons to shotgun metagenome 
+  data where short reads are obtained from throughout the genomes of the community. This type of data has the 
+  dual advantages of avoiding PCR bias and providing information not just on taxonomy but also function. 
+  However, the interpretation of this data is more challenging. Assembling metagenomes results in many short genome 
+  fragments or contigs. We recently developed CONCOCT an algorithm capable of clustering contigs using co-occurrence 
+  across multiple samples (Alneberg et al. 2014 – 36 citations). This enables species genomes to be directly 
+  extracted from even complex communities.</p>
+</div><!-- /.blurb -->
